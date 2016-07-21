@@ -1,0 +1,65 @@
+@import 'bulma';
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+
+.container {
+  width: 80%;
+  margin: 25px auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .header-img-container {
+    width: 150px;
+    height: 150px;
+    border: solid black 1px;
+    border-radius: 30%;
+    img {
+      max-width: 100%;
+    }
+  }
+  nav {
+    margin: 15px 0;
+      a {
+        font-size: 1.3em;
+        border: solid black 1px;
+        margin: 0 10px;
+      }
+    }
+}
+
+
+.detail-tmpl {
+  display: flex;
+  .detail-image {
+    min-width: 60%;
+    max-width: 60%;
+    border: solid black 1px;
+    margin: 0 1.5% 0 3%;
+  }
+  .detail-info {
+    width: 40%;
+    margin: 0 3% 0 1.5%;
+    .detail-title {
+      font-weight: 600;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  margin: 35px 0 0 3%;
+}
+
+
+
+
+
