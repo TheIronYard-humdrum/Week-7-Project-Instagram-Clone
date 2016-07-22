@@ -54,16 +54,24 @@ i {
 .fa-heart {
   top: 30px;
   right: 8px;
+  &:hover {
+    color: purple;
+  }
 }
 
 .fa-bars {
   top: 5px;
   right: 9px;
+  &:hover {
+    color: #1FC8DB;;
+  }
 }
 
 .fa-trash {
-  top: 110px;
   left: 10px;
+  &:hover {
+    color: red;
+  }
 }
 
 .detail-tmpl {
@@ -97,6 +105,9 @@ form {
   textarea {
     height: 100px;
   }
+  .textarea {
+    resize: none;
+  }
   button {
   }
 }
@@ -109,6 +120,7 @@ footer {
 
 
 @media screen and (max-width: 1000px) {
+  
   .front-image {
     width: 50%;
   }
