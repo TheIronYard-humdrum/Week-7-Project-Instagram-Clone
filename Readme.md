@@ -5,11 +5,11 @@ Learning Angular JS
 
 * Used and `<i>` tag wrapped in an `<a>` tag to use fontAwesome icon as my link.
 
-```html
-<a href="/#/detail/{{ image._id }}">
-  <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-</a>
-```
+  ```html
+  <a href="/#/detail/{{ image._id }}">
+    <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+  </a>
+  ```
 
 * Used `$stateParams` to carry `$scope` data from home page to detail page
 
