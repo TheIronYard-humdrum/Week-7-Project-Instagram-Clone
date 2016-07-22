@@ -3,7 +3,7 @@
 Learning Angular JS
 ---
 
-[Surge](http://tiy-humdrum-project-instagram-cone.surge.sh/#/)
+[Surge](http://tiy-humdrum-project-instagram-cone.surge.sh/)
 
 * Used and `<i>` tag wrapped in an `<a>` tag to use fontAwesome icon as my link.
 
