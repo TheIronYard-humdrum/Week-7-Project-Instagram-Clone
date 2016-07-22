@@ -12,8 +12,9 @@ function config ($stateProvider, $urlRouterProvider) {
     controller: 'HomeController'
   })
   .state('root.detail', {
-    url: '/detail',
-    templateUrl: 'templates/detail.tmpl.html'
+    url: '/detail/:imageID',
+    templateUrl: 'templates/detail.tmpl.html',
+    controller: 'DetailController'
   })
   .state('root.add', {
     url: '/add',

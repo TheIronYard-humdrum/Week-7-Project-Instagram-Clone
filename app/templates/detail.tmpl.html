@@ -1,10 +1,7 @@
 <div class="detail-tmpl">
-  <img class="detail-image" src="#">
+  <img class="detail-image" ng-src="{{ detailImage.url}}">
   <div class="detail-info">
-    <p class="detail-title">Title</p>
-    <p class="detail-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat.</p>
+    <p class="detail-title">{{ detailImage.name }}</p>
+    <p class="detail-description">{{ detailImage.description}}</p>
   </div>
 </div>

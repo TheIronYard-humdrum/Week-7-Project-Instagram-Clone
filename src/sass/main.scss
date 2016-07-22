@@ -77,18 +77,23 @@ i {
 }
 
 .detail-tmpl {
-  display: flex;
   .detail-image {
-    min-width: 60%;
     max-width: 60%;
     border: solid black 1px;
-    margin: 0 1.5% 0 3%;
   }
   .detail-info {
-    width: 40%;
-    margin: 0 3% 0 1.5%;
+    max-width: 40%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     .detail-title {
       font-weight: 600;
+      max-width: 40%;
+      text-align: right;
+    }
+    .detail-description {
+      text-align: right;
     }
   }
 }

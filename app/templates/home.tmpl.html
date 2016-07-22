@@ -2,7 +2,7 @@
   <li class="front-image" data-id="{{image._id}}" ng-repeat="image in images">
     <i ng-click="deleteImage(image._id)" class="fa fa-trash fa-lg" aria-hidden="true"></i>
     <i ng-click="favoriteMe(image, image.likes)" class="fa fa-heart fa-lg" aria-hidden="true" ng-module="{{image.likes}}">{{image.likes}}</i>
-    <i ng-click="showDetailed(image)" class="fa fa-bars fa-lg" aria-hidden="true"></i>
-    <img ng-src="{{ image.url }}" alt="{{ image.name}}">
+    <a href="/#/detail/{{ image._id }}"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
+    <img ng-src="{{ image.url }}" alt="{{ image.name }}">
   </li>
 </ul>

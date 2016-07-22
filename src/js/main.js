@@ -8,12 +8,13 @@ import { appConstant } from './app.constant'
 
 import { HomeController } from './Controllers/home.controller'
 import { AddController } from './Controllers/add.controller'
+import { DetailController } from './Controllers/detail.controller'
 
 angular
   .module('app', ['ui.router'])
   .config(config)
   .constant('SERVER', appConstant)
   .controller('HomeController', HomeController)
-  .controller('AddController', AddController);
-
-  
+  .controller('AddController', AddController)
+  .controller('DetailController', DetailController)
+;

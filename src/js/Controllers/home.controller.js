@@ -25,10 +25,6 @@ function HomeController ($scope, $http, SERVER, $state) {
     });
   }
 
-  $scope.showDetailed = (url) => {
-    $state.go('root.detail');
-  }
-
 }
 HomeController.$inject = ['$scope', '$http', 'SERVER', '$state'];
 export { HomeController }
