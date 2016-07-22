@@ -3,6 +3,8 @@
 Learning Angular JS
 ---
 
+* Used and `<i>` tag wrapped in an `<a>` tag to use fontAwesome icon as my link.
+
 ```html
 <a href="/#/detail/{{ image._id }}">
   <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
