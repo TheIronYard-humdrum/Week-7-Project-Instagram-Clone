@@ -1,9 +1,14 @@
-<form ng-submit="addImage(image)">
+<form>
   <p class="control">
     <input type="text" placeholder="Image Name" ng-model="image.name">
   </p>
   <p class="control">
     <input type="text" placeholder="Image URL" ng-model="image.url">
   </p>
-  <button>Add Image</button>
+  <p class="control">
+    <textarea placeholder="Image Description" ng-model="image.description">
+      
+    </textarea>
+  </p>
+  <a ng-click="addImage(image)" class="button is-primary is-outlined">Add Image</a>
 </form>

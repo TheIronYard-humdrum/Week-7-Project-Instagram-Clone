@@ -8,7 +8,7 @@
 
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 25px auto;
 }
 
@@ -20,7 +20,6 @@ header {
   .header-img-container {
     width: 150px;
     height: 150px;
-    border: solid black 1px;
     border-radius: 30%;
     img {
       max-width: 100%;
@@ -36,6 +35,36 @@ header {
     }
 }
 
+.front-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.front-image {
+  width: 33%;
+  position: relative;
+}
+
+i {
+  color: darken(white, 10%);
+  position: absolute;
+  top: 3px;
+}
+
+.fa-heart {
+  top: 30px;
+  right: 8px;
+}
+
+.fa-bars {
+  top: 5px;
+  right: 9px;
+}
+
+.fa-trash {
+  top: 110px;
+  left: 10px;
+}
 
 .detail-tmpl {
   display: flex;
@@ -54,12 +83,40 @@ header {
   }
 }
 
+form {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  input, textarea {
+    width: 100%;
+  }
+  textarea {
+    height: 100px;
+  }
+  button {
+  }
+}
+
+
 footer {
   display: flex;
   margin: 35px 0 0 3%;
 }
 
 
-
+@media screen and (max-width: 1000px) {
+  .front-image {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .front-image {
+    width: 100%;
+  }
+}
 
 

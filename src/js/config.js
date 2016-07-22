@@ -8,7 +8,8 @@ function config ($stateProvider, $urlRouterProvider) {
   })
   .state('root.home', {
     url: '/',
-    templateUrl: 'templates/home.tmpl.html'
+    templateUrl: 'templates/home.tmpl.html',
+    controller: 'HomeController'
   })
   .state('root.detail', {
     url: '/detail',
