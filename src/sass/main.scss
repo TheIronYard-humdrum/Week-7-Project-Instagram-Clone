@@ -43,6 +43,8 @@ header {
 .front-image {
   width: 33%;
   position: relative;
+  max-height: 144px;
+  overflow: hidden;
 }
 
 i {

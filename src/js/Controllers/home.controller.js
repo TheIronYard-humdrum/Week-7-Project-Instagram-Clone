@@ -20,7 +20,9 @@ function HomeController ($scope, $http, SERVER, $state) {
   };
 
   $scope.favoriteMe = (image) => {
-      image.likes === undefined ? image.likes = 1 : image.likes ++;
+    image.likes === undefined ? image.likes = 1 : image.likes ++;
+    $http.put(SERVER.URL + image._id, image).then( (res) => {
+    });
   }
 
   $scope.showDetailed = (url) => {
