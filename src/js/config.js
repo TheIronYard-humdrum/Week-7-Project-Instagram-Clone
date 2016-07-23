@@ -20,6 +20,11 @@ function config ($stateProvider, $urlRouterProvider) {
     url: '/add',
     templateUrl: 'templates/add.tmpl.html',
     controller: 'AddController'
+  })
+  .state('root.edit', {
+    url: '/edit/:imageID',
+    templateUrl: 'templates/edit.tmpl.html',
+    controller: 'EditController'
   });
 
   $urlRouterProvider.otherwise('/');

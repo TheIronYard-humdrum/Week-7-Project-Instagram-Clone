@@ -1,0 +1,10 @@
+<img ng-src="{{editImage.url}}">
+  <form ng-submit="updateImage(editImage, newImage)">
+    <p class='control'>
+      <input ng-model="editImage.name" type="text" value="{{editImage.name}}">
+    </p>
+    <p class="control">
+      <input ng-model="editImage.description" type="text" value="{{editImage.description}}">
+    </p>
+    <button>Submit</button>
+  </form>
