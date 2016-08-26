@@ -3,6 +3,6 @@
     <i ng-click="deleteImage(image._id)" class="fa fa-trash fa-lg" aria-hidden="true"></i>
     <i ng-click="favoriteMe(image, image.likes)" class="fa fa-heart fa-lg" aria-hidden="true" ng-module="{{image.likes}}">{{image.likes}}</i>
     <a href="/#/detail/{{ image._id }}"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
-    <img ng-src="{{ image.url }}" alt="{{ image.name }}">
+    <a href="/#/detail/{{ image._id }}"><img ng-src="{{ image.url }}" alt="{{ image.name }}"></a>
   </li>
 </ul>
